@@ -1,0 +1,27 @@
+You will be given two images:
+
+Image 1: an overhead view with a grid and labeled rows and columns.
+
+Image 2: a perspective view of the same scene taken from a camera located somewhere above the grid.
+
+Task: Identify the single grid cell in Image 1 that contains the camera’s ground-projection point (the point on the map directly beneath the camera).
+
+Rules:
+
+Use the row label and column label exactly as shown in Image 1.
+
+Output exactly one row and exactly one column (no ranges, no alternates, no “between” answers).
+
+Do not output where the camera is pointed—only the camera location cell.
+
+If uncertain, still choose the best single row and column.
+
+Also provide the confidence score (0-100) of your choice, where 0 is the least confident and 100 is the most confident.
+
+Output format (must be exact, three lines):
+CellRow=<row_label>
+CellCol=<col_label>
+Confidence Score=<confidence score>
+
+[image_1: /Users/pravin/projects/perspective_quiz/Images/0206Image1.jpg]
+[image_2: /Users/pravin/projects/perspective_quiz/Images/0206Image2a.jpg]
